@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.old.css">
+<!--     <link rel="stylesheet" href="css/style.css">
+ -->    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.css">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<!-- Hack to fix modal dialogs. load old css file, and then
+  load necessary css styles to fix navbar
+     <link href="css/bootstrap.css" rel="stylesheet"> 
+-->    
+  <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <style>
+
+      ul.nav li a {
+/*        height: 50px;
+*/      }
+
+      ul.nav {
+        padding-top: 5px;
+      }
+
+      .placeholder140 {
+        width: 140px;
+        height: 140px;
+      }
+
+      .marketing {
+        padding-top: 20px;
+      }
+
+      .body {
+        padding: 2% 10% 10% 10%;
+      }
+
+    </style>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body class="body">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">SF Bay Israelis</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="active"><a href="pictures.html">Pictures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+     <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="container-fluid">
+        <!--<header>-->
+            <h1>Picture Gallery</h1>
+            <p>Photos from our events</p>
+            <p>
+                <button id="start-slideshow" class="btn btn-large btn-success" data-slideshow="5000" data-target="#modal-gallery" data-selector="#gallery" data-gallery="gallery">Start Slideshow</button>
+                <button id="toggle-fullscreen" class="btn btn-large btn-primary" data-toggle="button">Toggle Fullscreen</button>
+            </p>
+        <!--</header>-->
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+        <!--    
+          <a data-gallery="gallery" href="http://farm8.static.flickr.com/7372/10119582906_bcab73e6cd_b.jpg" title="midnight shopping">
+            <img src="./Bootstrap Image Gallery_files/10119582906_bcab73e6cd_s.jpg">
+          </a>-->
+        </div>
+        <br>
+    </div>
+    
+
+    <!-- modal-gallery is the modal dialog used for the image gallery -->
+    <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="modal-title"></h3>
+        </div>
+        <div class="modal-body"><div class="modal-image"></div></div>
+        <div class="modal-footer">
+            <a class="btn modal-download" target="_blank">
+                <i class="icon-download"></i>
+                <span>Download</span>
+            </a>
+            <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+                <i class="icon-play icon-white"></i>
+                <span>Slideshow</span>
+            </a>
+            <a class="btn btn-info modal-prev">
+                <i class="icon-arrow-left icon-white"></i>
+                <span>Previous</span>
+            </a>
+            <a class="btn btn-primary modal-next">
+                <span>Next</span>
+                <i class="icon-arrow-right icon-white"></i>
+            </a>
+        </div>
+    </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 SFBayIL &middot; Website by <a href="mailto:gilsho@cs.stanford.edu">Gil Shotan</a>  and <a href="#">Nadav Eylath</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.old.js"></script>
+    <script src="js/load-image.js"></script>
+    <script src="js/bootstrap-image-gallery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
